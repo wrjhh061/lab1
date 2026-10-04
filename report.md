@@ -19,7 +19,7 @@
 
 ![正确性测试截图](images/btest.png)
 
-## 三、各题实现思路
+## 二、各题实现思路
 
 ### P1：`signMask`
 
@@ -97,7 +97,7 @@
 
 先构造字节掩码 `0x00FF00FF`，再利用掩码与其左移结果的异或，依次得到半字节、2 位和 1 位掩码，复用已有掩码减少构造开销。随后依次交换相邻的 1 位、2 位、4 位和 8 位组，最后交换两个 16 位半字；右移部分均用对应掩码过滤，完成全部 32 位的镜像反转。
 
-## 四、参考资料
+## 三、参考资料
 
 1. [课程 Lab1：DataLab 页面](https://ics-26fall-fdu.github.io/labs/lab1-data-lab/)
 2. [课程 DataLab 仓库的 README.md](https://github.com/ICS-26Fall-FDU/DataLab/blob/main/README.md) 与 [bits.c 题目说明](https://github.com/ICS-26Fall-FDU/DataLab/blob/main/bits.c)
